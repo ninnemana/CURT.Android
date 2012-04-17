@@ -37,28 +37,33 @@ public final class R {
         public static final int lookup_list_selected=0x7f020017;
         public static final int lookup_list_selector=0x7f020018;
         public static final int part_image_border=0x7f020019;
-        public static final int tab_bg_selected=0x7f02001a;
-        public static final int tab_bg_selector=0x7f02001b;
-        public static final int tab_bg_unselected=0x7f02001c;
-        public static final int tab_grey=0x7f02001d;
-        public static final int tab_text_selector=0x7f02001e;
-        public static final int tab_white=0x7f02001f;
+        public static final int tab_barcode=0x7f02001a;
+        public static final int tab_bg_selected=0x7f02001b;
+        public static final int tab_bg_selector=0x7f02001c;
+        public static final int tab_bg_unselected=0x7f02001d;
+        public static final int tab_camera=0x7f02001e;
+        public static final int tab_categories=0x7f02001f;
+        public static final int tab_grey=0x7f020020;
+        public static final int tab_lookup=0x7f020021;
+        public static final int tab_text_selector=0x7f020022;
+        public static final int tab_white=0x7f020023;
     }
     public static final class id {
         public static final int cat_desc=0x7f060002;
         public static final int cat_image=0x7f060000;
         public static final int cat_title=0x7f060001;
-        public static final int imageview=0x7f06000a;
-        public static final int imgPart=0x7f060008;
+        public static final int imageview=0x7f06000b;
+        public static final int imgPart=0x7f060009;
         public static final int loading_layout=0x7f060003;
         public static final int loading_text=0x7f060004;
         public static final int lookup_filter=0x7f060006;
         public static final int lookup_history=0x7f060005;
         public static final int lookup_option=0x7f060007;
-        public static final int tabsLayout=0x7f06000c;
-        public static final int tabsText=0x7f06000d;
-        public static final int textview=0x7f06000b;
-        public static final int txtPartDesc=0x7f060009;
+        public static final int tabImg=0x7f06000e;
+        public static final int tablayout=0x7f060008;
+        public static final int tabsLayout=0x7f06000d;
+        public static final int textview=0x7f06000c;
+        public static final int txtPartDesc=0x7f06000a;
     }
     public static final class layout {
         public static final int cat_list=0x7f030000;
