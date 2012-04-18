@@ -12,6 +12,7 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TabHost;
+import android.widget.TabHost.OnTabChangeListener;
 import android.widget.TabHost.TabContentFactory;
 import android.widget.TabHost.TabSpec;
 import android.widget.TableLayout.LayoutParams;
@@ -38,14 +39,13 @@ public class CURTIntialActivity extends TabActivity {
         
         // Create our icon image
         ImageView imgView = new ImageView(getApplicationContext());
-        imgView.setImageResource(R.drawable.icon);
+        imgView.setImageResource(R.drawable.icon_trans);
         
         // Set set the dimensions and spacing our the icon
         LayoutParams params = new LayoutParams();
-        params.width = 90;
-        params.height = 90;
-        params.rightMargin = 20;
-        params.leftMargin = 10;
+        params.width = 72;
+        params.height = 72;
+        params.setMargins(10, 10, 20, 10);
         params.gravity = Gravity.CENTER_VERTICAL;
         imgView.setLayoutParams(params);
         
@@ -63,10 +63,15 @@ public class CURTIntialActivity extends TabActivity {
         }
         
         // Add the other Tabs
-        setupTab(new TextView(this), "cats", new Intent().setClass(this, CategoryGroup.class), R.drawable.tab_categories);
+        setupTab(new TextView(this), "cats", new Intent().setClass(this, CategoryGroup.class), R.drawable.tab_categories_selected);
         setupTab(new TextView(this), "find", new Intent().setClass(this, LookupGroup.class), R.drawable.tab_lookup);
         setupTab(new TextView(this), "scan", new Intent().setClass(this, LookupGroup.class), R.drawable.tab_barcode);
         
+        /*mTabHost.setOnTabChangedListener(new OnTabChangeListener(){
+			public void onTabChanged(String tabId) {
+				if(mTabHost.getC)
+			}
+        });*/
         
         // Restore tab location to previous state or default to category tab
         if(savedInstanceState != null){
