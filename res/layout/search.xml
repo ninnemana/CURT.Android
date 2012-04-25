@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent" 
+    android:baselineAligned="false" 
+    android:orientation="vertical"
+    android:background="@drawable/lookup_list_selector">
+
+    <ListView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:transcriptMode="normal"
+        android:id="@android:id/list" />
+</LinearLayout>
