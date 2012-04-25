@@ -4,5 +4,9 @@
     <string name="hello">Hello World, CURTIntialActivity!</string>
     <string name="app_name">CURT</string>
     <string name="cat_search">Type to Filter</string>
-
+	<string name="search_hint">Search for Part</string>
+    
+    <!-- Scanner Strings -->
+    <string name="album_name">Scanner</string>
+    <string name="cannot">Cannot</string>
 </resources>

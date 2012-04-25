@@ -6,7 +6,11 @@
 
     <uses-sdk android:minSdkVersion="10" />
     <uses-permission android:name="android.permission.INTERNET"/>
-
+    <uses-permission android:name="android.permission.CAMERA"/>
+    
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
+	<uses-feature android:name="android.hardware.camera.autofocus" android:required="false" />
+	
     <application
         android:icon="@drawable/icon"
         android:label="CURT" >
@@ -68,6 +72,25 @@
         <activity
             android:name=".Scanner"
             android:label="@string/app_name" 
+            android:screenOrientation="portrait">
+            <!--  enable the search dialog to send searchs to Search -->
+            <meta-data android:name="android.app.default_searchable"
+                android:value=".Search"/>
+        </activity>
+        <activity
+            android:name=".Search"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait">
+            	<intent-filter>
+            	    <action android:name="android.intent.action.SEARCH" />
+            	</intent-filter>
+            	<meta-data android:name="android.app.searchable"
+            	    android:resource="@xml/searchable"/>
+        </activity>
+        <!--  This activity enables the search dialog to initiate Search -->
+        <activity android:name=".SearchActivity"
+            android:label="@string/app_name"
             android:screenOrientation="portrait">
         </activity>
     </application>

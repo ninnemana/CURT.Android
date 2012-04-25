@@ -21,15 +21,12 @@
 	        android:id="@+id/tablayout"
 	        android:orientation="vertical"
 	        android:layout_width="fill_parent"
-	        android:layout_height="fill_parent"
-	        android:paddingLeft="5dp"
-	        android:paddingRight="5dp"
-	        android:paddingBottom="5dp">
+	        android:layout_height="fill_parent">
 	        
-	        <!--View android:layout_width="fill_parent"
-	            android:layout_height="0.5dip"
-	            android:background="#ffffff" /-->
-	        
+			<View
+		        android:layout_width="fill_parent"
+		        android:layout_height="3dp"
+		        android:background="#f15922" />	        
 	        <TabWidget
 	            android:id="@android:id/tabs"
 	            android:layout_width="wrap_content"
@@ -39,12 +36,6 @@
 	            android:background="#231f20"
 	            android:layout_marginRight="0dip" />
 	        
-	        <!--View android:layout_width="fill_parent"
-	            android:layout_height="2dip"
-	            android:background="#696969" />
-	        <View android:layout_width="fill_parent"
-	            android:layout_height="2dip"
-	            android:background="#ffffff" /-->
 	        <FrameLayout
 	            android:id="@android:id/tabcontent"
 	            android:background="#ededed"

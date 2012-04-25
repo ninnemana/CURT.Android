@@ -63,15 +63,40 @@ public class CURTIntialActivity extends TabActivity {
         }
         
         // Add the other Tabs
-        setupTab(new TextView(this), "cats", new Intent().setClass(this, CategoryGroup.class), R.drawable.tab_categories_selected);
+        setupTab(new TextView(this), "cats", new Intent().setClass(this, CategoryGroup.class), R.drawable.tab_categories);
         setupTab(new TextView(this), "find", new Intent().setClass(this, LookupGroup.class), R.drawable.tab_lookup);
-        setupTab(new TextView(this), "scan", new Intent().setClass(this, LookupGroup.class), R.drawable.tab_barcode);
+        setupTab(new TextView(this), "scan", new Intent().setClass(this, Scanner.class), R.drawable.tab_barcode);
         
-        /*mTabHost.setOnTabChangedListener(new OnTabChangeListener(){
+        mTabHost.setOnTabChangedListener(new OnTabChangeListener(){
 			public void onTabChanged(String tabId) {
-				if(mTabHost.getC)
+				int spec = mTabHost.getCurrentTab();
+				if(spec > 0){
+					for(int i = 1; i < mTabHost.getTabWidget().getChildCount(); i++){
+						View tView = mTabHost.getTabWidget().getChildAt(i);
+						ImageView tabImg = (ImageView)tView.findViewById(R.id.tabImg);
+						if(i == 1){
+							if(spec != i){
+								tabImg.setImageResource(R.drawable.tab_categories);
+							}else{
+								tabImg.setImageResource(R.drawable.tab_categories_selected);
+							}
+						}else if(i == 2){
+							if(spec != i){
+								tabImg.setImageResource(R.drawable.tab_lookup);
+							}else{
+								tabImg.setImageResource(R.drawable.tab_lookup_selected);
+							}
+						}else if(i == 3){
+							if(spec != i){
+								tabImg.setImageResource(R.drawable.tab_barcode);
+							}else{
+								tabImg.setImageResource(R.drawable.tab_barcode_selected);
+							}
+						}
+					}
+				}
 			}
-        });*/
+        });
         
         // Restore tab location to previous state or default to category tab
         if(savedInstanceState != null){

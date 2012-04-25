@@ -39,33 +39,41 @@ public final class R {
         public static final int lookup_list_selector=0x7f020019;
         public static final int part_image_border=0x7f02001a;
         public static final int tab_barcode=0x7f02001b;
-        public static final int tab_bg_selected=0x7f02001c;
-        public static final int tab_bg_selector=0x7f02001d;
-        public static final int tab_bg_unselected=0x7f02001e;
-        public static final int tab_camera=0x7f02001f;
-        public static final int tab_categories=0x7f020020;
-        public static final int tab_categories_selected=0x7f020021;
-        public static final int tab_grey=0x7f020022;
-        public static final int tab_lookup=0x7f020023;
-        public static final int tab_text_selector=0x7f020024;
-        public static final int tab_white=0x7f020025;
+        public static final int tab_barcode_selected=0x7f02001c;
+        public static final int tab_bg_selected=0x7f02001d;
+        public static final int tab_bg_selector=0x7f02001e;
+        public static final int tab_bg_unselected=0x7f02001f;
+        public static final int tab_camera=0x7f020020;
+        public static final int tab_categories=0x7f020021;
+        public static final int tab_categories_selected=0x7f020022;
+        public static final int tab_grey=0x7f020023;
+        public static final int tab_lookup=0x7f020024;
+        public static final int tab_lookup_selected=0x7f020025;
+        public static final int tab_text_selector=0x7f020026;
+        public static final int tab_white=0x7f020027;
     }
     public static final class id {
-        public static final int cat_desc=0x7f060002;
-        public static final int cat_image=0x7f060000;
-        public static final int cat_title=0x7f060001;
-        public static final int imageview=0x7f06000b;
-        public static final int imgPart=0x7f060009;
-        public static final int loading_layout=0x7f060003;
-        public static final int loading_text=0x7f060004;
-        public static final int lookup_filter=0x7f060006;
-        public static final int lookup_history=0x7f060005;
-        public static final int lookup_option=0x7f060007;
-        public static final int tabImg=0x7f06000e;
-        public static final int tablayout=0x7f060008;
-        public static final int tabsLayout=0x7f06000d;
-        public static final int textview=0x7f06000c;
-        public static final int txtPartDesc=0x7f06000a;
+        public static final int btnIntent=0x7f07000d;
+        public static final int btnIntentS=0x7f07000e;
+        public static final int btnIntentV=0x7f07000f;
+        public static final int cat_desc=0x7f070002;
+        public static final int cat_image=0x7f070000;
+        public static final int cat_title=0x7f070001;
+        public static final int imageView=0x7f070010;
+        public static final int imageview=0x7f07000b;
+        public static final int imgPart=0x7f070009;
+        public static final int loading_layout=0x7f070003;
+        public static final int loading_text=0x7f070004;
+        public static final int lookup_filter=0x7f070006;
+        public static final int lookup_history=0x7f070005;
+        public static final int lookup_option=0x7f070007;
+        public static final int search_option=0x7f070012;
+        public static final int tabImg=0x7f070014;
+        public static final int tablayout=0x7f070008;
+        public static final int tabsLayout=0x7f070013;
+        public static final int textview=0x7f07000c;
+        public static final int txtPartDesc=0x7f07000a;
+        public static final int videoView=0x7f070011;
     }
     public static final class layout {
         public static final int cat_list=0x7f030000;
@@ -76,16 +84,27 @@ public final class R {
         public static final int main=0x7f030005;
         public static final int part_list=0x7f030006;
         public static final int part_list_row=0x7f030007;
-        public static final int tabs_bg=0x7f030008;
+        public static final int scanner=0x7f030008;
+        public static final int search=0x7f030009;
+        public static final int search_row=0x7f03000a;
+        public static final int tabs_bg=0x7f03000b;
     }
     public static final class string {
-        public static final int app_name=0x7f050001;
-        public static final int cat_search=0x7f050002;
-        public static final int hello=0x7f050000;
+        /**  Scanner Strings 
+         */
+        public static final int album_name=0x7f060004;
+        public static final int app_name=0x7f060001;
+        public static final int cannot=0x7f060005;
+        public static final int cat_search=0x7f060002;
+        public static final int hello=0x7f060000;
+        public static final int search_hint=0x7f060003;
     }
     public static final class style {
-        public static final int ImageView=0x7f040001;
-        public static final int ListViewRow=0x7f040000;
-        public static final int LookupHistory=0x7f040002;
+        public static final int ImageView=0x7f050001;
+        public static final int ListViewRow=0x7f050000;
+        public static final int LookupHistory=0x7f050002;
+    }
+    public static final class xml {
+        public static final int searchable=0x7f040000;
     }
 }
