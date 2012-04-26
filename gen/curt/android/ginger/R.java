@@ -59,6 +59,7 @@ public final class R {
         public static final int cat_desc=0x7f070002;
         public static final int cat_image=0x7f070000;
         public static final int cat_title=0x7f070001;
+        public static final int icon=0x7f070013;
         public static final int imageView=0x7f070010;
         public static final int imageview=0x7f07000b;
         public static final int imgPart=0x7f070009;
@@ -68,10 +69,11 @@ public final class R {
         public static final int lookup_history=0x7f070005;
         public static final int lookup_option=0x7f070007;
         public static final int search_option=0x7f070012;
-        public static final int tabImg=0x7f070014;
+        public static final int tabImg=0x7f070016;
         public static final int tablayout=0x7f070008;
-        public static final int tabsLayout=0x7f070013;
+        public static final int tabsLayout=0x7f070015;
         public static final int textview=0x7f07000c;
+        public static final int title=0x7f070014;
         public static final int txtPartDesc=0x7f07000a;
         public static final int videoView=0x7f070011;
     }
@@ -87,7 +89,8 @@ public final class R {
         public static final int scanner=0x7f030008;
         public static final int search=0x7f030009;
         public static final int search_row=0x7f03000a;
-        public static final int tabs_bg=0x7f03000b;
+        public static final int tab_indicator=0x7f03000b;
+        public static final int tabs_bg=0x7f03000c;
     }
     public static final class string {
         /**  Scanner Strings 

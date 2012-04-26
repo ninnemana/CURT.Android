@@ -4,6 +4,7 @@ import android.app.TabActivity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.Resources;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Gravity;
@@ -26,7 +27,25 @@ public class CURTIntialActivity extends TabActivity {
 	private void setupTabHost(){
 		mTabHost = (TabHost) findViewById(android.R.id.tabhost);
 		mTabHost.setup();
+		mTabHost.getTabWidget().setOrientation(LinearLayout.VERTICAL);
 	}
+	
+	private View createIndicatorView(TabHost tabHost, CharSequence label, int imgId) {
+
+	       LayoutInflater inflater = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+
+	       View tabIndicator = inflater.inflate(R.layout.tab_indicator,
+	               tabHost.getTabWidget(), // tab widget is the parent
+	               false); // no inflate params
+
+	       final TextView tv = (TextView) tabIndicator.findViewById(R.id.title);
+	       tv.setText(label);
+
+	       final ImageView iconView = (ImageView) tabIndicator.findViewById(R.id.icon);
+	       iconView.setImageResource(imgId);
+
+	       return tabIndicator;
+	   }
 	
     /** Called when the activity is first created. */
     @Override
@@ -125,7 +144,8 @@ public class CURTIntialActivity extends TabActivity {
 	    		public View createTabContent(String tag) { return view; }
 	    	});
     	}else{
-    		setContent = mTabHost.newTabSpec(tag).setIndicator(tabView).setContent(intent);
+    		//setContent = mTabHost.newTabSpec(tag).setIndicator(tabView).setContent(intent);
+    		setContent = mTabHost.newTabSpec(tag).setIndicator(createIndicatorView(mTabHost, tag, imgId));
     	}
     	mTabHost.addTab(setContent);
     }
